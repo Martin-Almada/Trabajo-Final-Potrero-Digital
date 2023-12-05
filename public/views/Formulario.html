@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registro</title>
+    <link rel="icon" href="../img/icon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div>
+            <h1>Nissan Skyline R32 Blog</h1>
+            <p>Información y datos interesantes sobre el conocido R32</p>
+        </div>
+    </header>
+    <!-- navbar (Elemento Bootstrap)-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BLOG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/Reconocimientos.html">Reconocimientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Registro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- formulario -->
+    <form action="">
+        <fieldset>
+            <legend>Formulario de registro</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="name" id="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="lname" id="apellido">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="Contraseña" id="pass">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="date" id="fecha">
+            <input type="submit" value="REGISTRARSE">
+            <input type="reset" value="BORRAR">
+        </fieldset>
+    </form>
+</body>
+</html>

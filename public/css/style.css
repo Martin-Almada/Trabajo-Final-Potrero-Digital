@@ -1,0 +1,191 @@
+/*PALETA*/
+h{
+    color: blue;
+    color: rgb(0, 81, 255);
+    color: darkred;
+    color: black;
+    color: rgb(34, 34, 34);
+}
+
+/* estilos comunes */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* Estilos header */
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/headerimg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgb(88, 10, 10), rgb(39, 39, 39));
+    color:azure;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* estilos navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(44, 25, 25);
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 7px;
+    border-color: darkred;
+}
+
+.navbar a {
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color:darkred ;
+}
+
+.navbar .nav-link.active {
+    background-color: darkred;
+    color: rgb(179 161 161);
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/* estilo parte principal */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    color: azure;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 10px;
+    background-color: rgb(44, 25, 25);
+    text-align: center;
+}
+
+main {
+    flex-basis: 75%;
+    padding: 20px;
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: azure;
+    text-align: center;
+}
+
+main p {
+    font-style: italic;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5 all ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.asaidetitle {
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    .image img {
+        width: 60%;
+        height: auto;
+    }
+
+}
+
+/* estilos formulario */
+
+form {
+    padding: 40px;
+    background-color: rgb(44, 25, 25);
+    border: 5px outset darkred;
+    text-align: center;
+    color: azure;
+}
+
+label {
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width:fit-content;
+    font-size: 1.2rem;
+    border: 5px double darkred;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
